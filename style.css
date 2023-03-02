@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: ghostwhite;
+}
+
+.container{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+    height: 600px;
+}
+
+.header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+.danger{
+    background-color: crimson;
+    color:ghostwhite;
+    width: 250px;
+    margin: 0 auto;
+    font-weight: lighter;
+    border-radius: 5px;
+    position: relative;
+    top: 15px;
+    left: 20px;
+}
+#icon{
+    font-size: 30px;
+    margin: 10px;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+.mainHead{
+    font-size: 30px;
+    font-weight: 550;
+    cursor: pointer;
+}
+.blueHead{
+    color: lightskyblue;
+}
+.formGroup{
+    margin: 2em;  
+}
+.formControl {
+    outline: none;
+    font-size: 20px;
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    border: black double 1px;
+    padding-left: 15px;
+    transition: all ease-in-out 0.4s;
+}
+.formControl:hover{
+    transform: scale(1.02);
+}
+.formControl:active{
+    transform: translateX(4px);
+}
+
+.labelText{
+    margin-right: 30px;
+}
+.adjust {
+    position: relative;
+    left: -10px;
+    transition: all 0.5s ease-in-out;
+}
+.adjust-2{
+    position: relative;
+    left: -7px;
+    transition: all ease-in-out 0.5s;
+}
+.btn{
+    outline: none;
+    border: black solid 1px;
+    width: 350px;
+    position: relative;
+    right: -36px;
+    top: -25px;
+    background-color: lightskyblue;
+    font-weight: bold;
+    border-radius: 3px;
+    transition: all ease-in-out 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.03);
+}
+.btn:active{
+    transform: translateX(5px);
+}
+.list{
+    position: relative;
+    top: 10px;
+}
+
+th{
+    padding-left: 2em;
+    padding-right:3em;
+    background-color: aliceblue;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1.5px solid;
+    border-top: 1.5px solid;
+}
+
+.exist{
+    cursor: pointer;
+    color: crimson;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: all 0.3s ease-in-out;
+}
+
+.exist:hover{
+    filter:brightness(105%);
+    transform: scale(1.1);
+}
+
+@media (max-width:900px){
+    .formGroup{
+        display: flex;
+        flex-flow: wrap;
+    }
+    .adjust{
+        position: relative;
+        left: 1px;
+    }
+    .adjust-2{
+        position: relative;
+        left: 2px;
+    }
+    .btn{
+        width: 200px;
+        margin: 0 auto;
+        position: relative;
+        right: -10px;
+    }
+    th{
+        padding-left: 2em;
+        padding-right: 4px;
+    }
+}
+
+@media (max-width:800px){
+    .adjust{
+        position: relative;
+        left: 1px;
+    }
+    .adjust-2{
+        position: relative;
+        left: 3px;
+    }
+}
+
+
+@media (max-width:520px){
+    .btn{
+        width: 150px;
+        position: relative;
+        left: 25px;
+    }
+    .formControl{
+        position: relative;
+    
+    }
+}
